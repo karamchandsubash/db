@@ -4,6 +4,7 @@ const User = require('./User');
 const app = express();
 app.use(express.json())
 
+
 app.get('/select',async (req,res)=>{
     const data = await User.find();
     res.json(data);
